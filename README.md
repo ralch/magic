@@ -1,26 +1,30 @@
 # magic
 
-The package detects a file's mime-type by looking for magic numbers in its content.
-
 [![Go Reference](https://pkg.go.dev/badge/github.com/ralch/magic.svg)](https://pkg.go.dev/github.com/ralch/magic)
+
+The package detects a file's mime-type by looking for magic numbers in its content.
 
 ## Getting Started
 
-First you should make sure that in your environment [libmagic(3)](https://linux.die.net/man/3/libmagic) library is presented. You
-can install it for most of the platforms in the following way:
+First you should make sure that in your environment,
+[libmagic(3)](https://linux.die.net/man/3/libmagic) library is presented.
+Otherwise, you can install it for most of the platforms in the following way:
+
+### Mac OS X
 
 ```bash
-# Mac OS X
 $ brew install libmagic
 ```
 
+### Debian or Ubuntu
+
 ```bash
-# Debian or Ubuntu
 $ apt-get install libmagic-dev
 ```
 
+### RHEL, CentOS or Fedora
+
 ```bash
-# RHEL, CentOS or Fedora
 $ yum install file-devel
 ```
 
@@ -29,5 +33,3 @@ Then you can install the package:
 ```bash
 $ go get github.com/ralch/magic
 ```
-
-# License

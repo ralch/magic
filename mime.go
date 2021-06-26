@@ -1,3 +1,5 @@
+// +build linux darwin freebsd
+
 package magic
 
 // Copyright 2013 Google Inc. All Rights Reserved.
@@ -13,8 +15,6 @@ package magic
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
-// +build linux darwin freebsd
 
 // #cgo CFLAGS: -I/usr/local/include
 // #cgo LDFLAGS: -lmagic -L/usr/local/lib
